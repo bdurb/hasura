@@ -9,11 +9,11 @@ import App from './App.vue'
 Vue.config.productionTip = false
 
 const httpLink = new HttpLink({
-  uri: 'hasura-vue-proj.herokuapp.com'
+  uri: 'http://hasura-vue-proj.herokuapp.com/v1alpha1/graphql'
 })
 
 const apolloClient = new ApolloClient({
-  link: HttpLink,
+  link: httpLink,
   cache: new InMemoryCache(),
   connectToDevTools: true
 })

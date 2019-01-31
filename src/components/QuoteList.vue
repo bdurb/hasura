@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2 v-if="loading">Loading...</h2>
     <quote
       v-for="quote in quotes"
       :key="quote.id"

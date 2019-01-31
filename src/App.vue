@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <h1>placeholder</h1>
+    <h1>Fun Quotes!</h1>
+    <QuoteList />
   </div>
 </template>
 
 <script>
+import QuoteList from './components/QuoteList'
 
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    QuoteList
+  }
 }
 </script>
 
